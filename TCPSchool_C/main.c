@@ -43,9 +43,12 @@ int main(void) {
 	// 심볼릭 상수(symbolic constant) :
 	const int MAX = 10; // const 키워드를 이용한 심볼릭 상수 
 	#define MAX 10; // #define 선행처리 지시자를 이용한 매크로 심볼릭 상수
-	
+	 
 */
 
 // 9) Primitive Type :
-	 
+	 int num = 2147483647;
+	 printf("변수 num에 저장된 값은 %d입니다.\n",num); // int의 최댓값
+	 num = 2147483648;
+	 printf("변수 num에 저장된 값은 %d입니다.\n", num); // 오버플로우 
 }
