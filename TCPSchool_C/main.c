@@ -43,12 +43,39 @@ int main(void) {
 	// 심볼릭 상수(symbolic constant) :
 	const int MAX = 10; // const 키워드를 이용한 심볼릭 상수 
 	#define MAX 10; // #define 선행처리 지시자를 이용한 매크로 심볼릭 상수
-	 
-*/
+
 
 // 9) Primitive Type :
-	 int num = 2147483647;
-	 printf("변수 num에 저장된 값은 %d입니다.\n",num); // int의 최댓값
-	 num = 2147483648;
-	 printf("변수 num에 저장된 값은 %d입니다.\n", num); // 오버플로우 
+	int num = 2147483647;
+	printf("변수 num에 저장된 값은 %d입니다.\n",num); // int의 최댓값
+	num = 2147483648;
+	printf("변수 num에 저장된 값은 %d입니다.\n", num); // 오버플로우
+	
+	// float은 소수 부분 6자리까지 오차없이 표현 
+	float num01 = 3.1415926535897932;
+	printf("변수 pi에 저장된 값은 %.20f입니다.\n", num01); // 3.14159274101257320000
+	
+	// double은 소수 부분 15자리까지 오차없이 표현 
+	double num02 = 3.1415926535897932;
+	printf("변수 pi에 저장된 값은 %.20f입니다.\n", num02); // 3.14159265358979310000
+	
+	char ch = 'a';
+	printf("변수 ch에 저장된 값은 %c입니다.\n", ch); // a
+	printf("변수 ch에 저장된 값은 %d입니다.\n", ch); // 97	 
+*/
+	
+// 10) Type Conversion :
+	char ch = 200;
+	int num01 = 3.14;
+	double num02 = 5;
+	
+	printf("	ch에 저장된 값은 %d입니다.\n", ch); // -56
+	printf("num01에 저장된 값은 %d입니다.\n", num01); // 3
+	printf("num02에 저장된 값은 %f입니다.\n", num02); // 5.000000
+	
+	double result01 = 5 + 3.14;
+	double result02 = 5.0f + 3.14;
+	
+	printf("result01에 저장된 값은 %f입니다.\n", result01);
+	printf("result02에 저장된 값은 %f입니다.\n", result02);
 }
