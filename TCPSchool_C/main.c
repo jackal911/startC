@@ -62,7 +62,7 @@ int main(void) {
 	char ch = 'a';
 	printf("변수 ch에 저장된 값은 %c입니다.\n", ch); // a
 	printf("변수 ch에 저장된 값은 %d입니다.\n", ch); // 97	 
-*/
+
 	
 // 10) Type Conversion :
 	char ch = 200;
@@ -78,4 +78,15 @@ int main(void) {
 	
 	printf("result01에 저장된 값은 %f입니다.\n", result01);
 	printf("result02에 저장된 값은 %f입니다.\n", result02);
+*/
+
+// 11) arithmetic operator
+	int num01 = 10;
+	int num02 = 4;
+	
+	printf("+ 연산자에 의한 결괏값은 %d입니다.\n", num01 + num02);
+	printf("- 연산자에 의한 결괏값은 %d입니다.\n", num01 - num02);
+	printf("* 연산자에 의한 결괏값은 %d입니다.\n", num01 * num02);
+	printf("/ 연산자에 의한 결괏값은 %d입니다.\n", num01 / num02);
+	printf("%% 연산자에 의한 결괏값은 %d입니다.\n", num01 % num02);
 }
