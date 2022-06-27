@@ -84,7 +84,7 @@ int main(void) {
 	int num01 = 10;
 	int num02 = 4;
 	
-	printf("+ 연산자에 의한 결괏값은 %d입니다.\n", num01 + num02);
+	printf("+ 연산자에 의한 결괏값은 %d입니다\n", num01 + num02);
 	printf("- 연산자에 의한 결괏값은 %d입니다.\n", num01 - num02);
 	printf("* 연산자에 의한 결괏값은 %d입니다.\n", num01 * num02);
 	printf("/ 연산자에 의한 결괏값은 %d입니다.\n", num01 / num02);
